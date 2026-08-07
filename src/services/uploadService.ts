@@ -35,7 +35,7 @@ export const uploadDoggo = async (file: File): Promise<string> => {
   if (databaseError) {
     console.error("Database insert failed:", databaseError);
 
-    // Clean up the uploaded file if the DB insert fails
+    // Cleans up the uploaded file if the DB insert fails
     await supabase.storage.from("doggo_picture_storage").remove([data.path]);
 
     throw new Error("Your image couldn't be submitted. Please try again.");
