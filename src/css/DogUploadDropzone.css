@@ -1,0 +1,67 @@
+.dropzone {
+  border: 3px dashed #0066cc;
+  border-radius: 24px;
+  padding: 3rem;
+  text-align: center;
+  cursor: pointer;
+  background: #f5fbff;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.dropzone:hover,
+.dropzone.active {
+  background-color: #e1f3ff;
+  transform: scale(1.02);
+}
+
+.dropzone p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0057b8;
+}
+
+.dropzone span {
+  display: block;
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+.guidelines {
+  margin-top: 2rem;
+  color: #003f8f;
+}
+
+.guidelines h3 {
+  margin-bottom: 0.75rem;
+}
+
+.guidelines ul {
+  padding-left: 1.5rem;
+}
+
+.guidelines li {
+  margin-bottom: 0.5rem;
+}
+
+.dropzone.uploading {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.dropzone.uploading p {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+}
