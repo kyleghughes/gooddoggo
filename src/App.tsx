@@ -4,7 +4,7 @@ import UploadDialog from "./components/UploadDialog";
 import Toast from "./components/Toast";
 import { getRandomDoggo } from "./services/imageService";
 import GoodDoggoLogo from "../src/assets/GoodDoggoLogo.png";
-import "./css/App.css";
+import "./css/app.css";
 
 // #region interface
 interface ToastState {
