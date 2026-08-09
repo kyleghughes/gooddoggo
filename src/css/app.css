@@ -7,6 +7,12 @@ body {
   font-family: "Arial", sans-serif;
 }
 
+p {
+  color: #0066cc;
+  font-weight: bold;
+  text-align: center;
+}
+
 .page {
   min-height: 100vh;
   display: flex;
@@ -15,7 +21,6 @@ body {
   justify-content: center;
   gap: 2rem;
   padding: 2rem 1rem;
-
   background-color: #bde7ff;
   background-image: url("/bone-svg.svg");
   background-repeat: repeat;
@@ -24,7 +29,6 @@ body {
 }
 
 .logo-container {
-  margin-bottom: 1rem;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -40,7 +44,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: clamp(1.25rem, 3vw, 2rem);
+  gap: clamp(0.75rem, 2vw, 1.25rem);
   padding: clamp(1.5rem, 5vw, 3rem);
   background: rgba(255, 255, 255, 0.92);
   border-radius: 40px;
@@ -80,7 +84,6 @@ body {
   transition:
     transform 0.2s ease,
     background-color 0.2s ease;
-
   box-shadow: 0 8px 20px rgba(0, 70, 150, 0.3);
 }
 

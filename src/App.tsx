@@ -37,6 +37,12 @@ const App = () => {
           <img src={GoodDoggoLogo} alt="Good Doggo" className="logo" />
         </header>
 
+        <p>
+          Welcome to GoodDoggo! Each time you load the page, you will be greeted
+          with a random Good Doggo! You can even upload a picture of your own
+          good doggo for others to see!
+        </p>
+
         <section className="image-container">
           {isLoading ? (
             <div className="loader">Loading doggo...</div>
